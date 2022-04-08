@@ -1,0 +1,22 @@
+
+Esp32 project that can pub or sub messages to aws mqtt.
+
+AWS api and lambda that can publish to esp32/sub mqtt topic. Esp32 listens on this topic.
+
+React app served from S3 using react app. This uses the api/lambda to publish mqtt messages.
+  This will have to live under www.lefthandedcatstudio.com s3 bucket
+
+? How to view messages in the react app as esp32 publishes messages?
+
+
+---
+Demo status
+
+React app (IOT esp32 dashboard) can publish messages to mqtt via the api gw/lambda (publish-to-mqtt)
+Currently the app publishes 16 button states which are intended to be used to control lights on the esp32.
+The app is working on www.lefthandedcatstuido.com/iot.html.
+CORS is working on the lambda.
+
+I do not have a way of feeding information from the esp32 back into the react app.
+
+Next: Figure out how to feedback from esp32 into react app
